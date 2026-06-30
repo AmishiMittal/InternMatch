@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+*.db
+
+# Uploads
+backend/uploads/
+
+# Node
+node_modules/
+frontend/dist/
+
+# Test cache
+.pytest_cache/
+htmlcov/
+.coverage
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
