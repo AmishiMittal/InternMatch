@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     database_url: str = "postgresql+psycopg2://postgres:postgres@localhost:5432/internmatch"
     upload_dir: Path = UPLOAD_DIR
     max_upload_size_mb: int = 10
-    student_eligibility_threshold: float = 45.0
+    student_eligibility_threshold: float = 70.0
     resume_max_age_days: int = 90
 
     class Config:

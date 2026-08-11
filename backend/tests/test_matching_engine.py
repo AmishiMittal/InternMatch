@@ -56,7 +56,9 @@ def test_location_score_exact_match():
 
 
 def test_location_score_no_overlap():
-    assert _location_score("New York, NY", "Austin, TX") == 0.0
+    # Non-overlapping locations still get the 0.3 floor so remote-friendly
+    # roles aren't unfairly penalised (see engine.py::_location_score).
+    assert _location_score("New York, NY", "Austin, TX") == 0.3
 
 
 def test_compute_match_perfect_fit_scores_high():
